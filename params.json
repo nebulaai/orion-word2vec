@@ -1,0 +1,10 @@
+
+{"exec_file_name": "word2vec_basic.py",
+  "data_uri": "http://mattmahoney.net/dc/text8.zip" ,
+  "data_path": "datadir",
+  "output_path":"log"
+}
+
+
+
+

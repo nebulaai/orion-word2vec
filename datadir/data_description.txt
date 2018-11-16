@@ -1,0 +1,11 @@
+
+A public text dataset for NLP benchmarks and word embeddings.
+
+Tutorials: https://medium.com/deep-math-machine-learning-ai/chapter-9-2-nlp-code-for-word2vec-neural-network-tensorflow-544db99f5334
+
+
+Skip-Gram model
+It takes one word as input and try to predict the surrounding (neighboring) words,
+e.g.:
+
+[“Mady”, “goes”],[“goes”,”crazy”] → “goes” is the input word and “Mady” and “Crazy” are the surrounding words (Output probabilities)
