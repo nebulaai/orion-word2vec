@@ -49,14 +49,17 @@ FLAGS, unparsed = parser.parse_known_args()
 if not os.path.exists(FLAGS.log_dir):
   os.makedirs(FLAGS.log_dir)
 
-# # Step 1: Download the data.
+## Step 1: Download the data.
 # url = 'http://mattmahoney.net/dc/'
-#
-#
-# # pylint: disable=redefined-outer-name
+
+
+# # This section try to download the text8.txt data if there is no such file in directory "./datadir/"
+# # Since this Orion example aim to demonstrate Orion can download online data if the user provide data url, so this section is commented.
+# # The url will be asked when the user useing the convertor to wrap the AI model on local machine into a Orion ready zip file.
 # def maybe_download(filename, expected_bytes):
 #   """Download a file if not present, and make sure it's the right size."""
-#   local_filename = os.path.join(gettempdir(), filename)
+#   # local_filename = os.path.join(gettempdir(), filename)
+#   local_filename = os.path.join('./datadir/', filename)
 #   if not os.path.exists(local_filename):
 #     local_filename, _ = urllib.request.urlretrieve(url + filename,
 #                                                    local_filename)
@@ -65,8 +68,7 @@ if not os.path.exists(FLAGS.log_dir):
 #     print('Found and verified', filename)
 #   else:
 #     print(statinfo.st_size)
-#     raise Exception('Failed to verify ' + local_filename +
-#                     '. Can you get to it with a browser?')
+#     raise Exception('Failed to verify ' + local_filename + '. Can you get to it with a browser?')
 #   return local_filename
 # filename = maybe_download('text8.zip', 31344016)
 
