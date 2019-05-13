@@ -1,9 +1,9 @@
-# Orion sample AI task - single GPU - word2vec #
+# Orion - word2vec #
 
 
 # Introduction #
 
-This is a sample AI script for testing task-processing pipeline on Nebula AI Orion working node.
+This is a trial AI script for testing task-processing pipeline on Nebula AI Orion working node.
 Original article: https://medium.com/deep-math-machine-learning-ai/chapter-9-2-nlp-code-for-word2vec-neural-network-tensorflow-544db99f5334
 
 # Model Description #
